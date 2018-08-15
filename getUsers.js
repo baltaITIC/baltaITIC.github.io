@@ -7,7 +7,7 @@ $.getJSON( "https://jsonplaceholder.typicode.com/users", function( data ) {
 
 function addCard(val) {
 
-  return result ="<div class='card' style='width: 20%; display: inline-block;   border-top: 5px dashed #8c8b8b; margin-top:5px;'>\
+  return result ="<div class='card' style='width: 20%; display: inline-block; border: 3px dashed #8c8b8b; margin:10px 10px 10px 10px; padding:10px;'>\
   <div class='card-body border border-info rounded'>\
     <h3 class='card-title'>"+val.name+"</h3>\
     <h6 class='card-subtitle mb-2 text-muted'>"+val.username+"</h6>\
