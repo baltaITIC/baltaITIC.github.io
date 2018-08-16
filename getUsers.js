@@ -49,3 +49,7 @@ function addCard(val) {
     }
   });
 });
+
+window.addEventListener('appinstalled', (evt) => {
+  alert('a2hs', 'installed');
+});
