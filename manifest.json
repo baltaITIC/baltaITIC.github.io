@@ -10,7 +10,103 @@
     "description": "This is a app that shows persons that are important",
     "orientation": "portrait",
     "background_color": "transparent",
-    "related_applications": [""],
+    "related_applications": [],
     "prefer_related_applications": false,
-    "icons": [""]
+    "icons": [
+        {
+            "src": "/images/872a3864-2d8d-4bc4-2290-2ade244f08cd.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/5b3609d4-f1a3-8093-c030-203ae16f6d40.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/windows10/SplashScreen.scale-200.png.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/252e3314-2866-0e70-a9d6-2b1f93122beb.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/e6358898-bf05-ad22-6db8-b2cc73230399.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/4409a7a0-e794-8668-1ce1-05db4aa5a9da.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ba1a8a43-2b02-15be-0549-a4a8ca7c4ebc.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d6c8cbbd-83cc-56d3-e1dc-1fe89ef42c38.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/3fc1a413-86a5-8f3b-7e2c-9c48d7117222.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/a2e1d5d6-731b-096e-af45-182d32ac4db0.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/21e08c4e-520f-e551-9fa0-d49faa51557a.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/09c4e51c-3bea-fe97-01c5-27ed0a74d203.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/c7a739ac-75f0-228d-6ae5-3e4be9c10240.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/64cf3e32-78c4-8e25-26c2-58a6f3be0285.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ios/ios-appicon-1024-1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/eaa0b187-b62b-a424-6050-defebbcda294.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/c536d141-66af-10e5-330f-281a473f1d52.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8ebc1c98-12dc-1022-dea9-32db0736fd8d.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/fcaadc38-d804-f01c-1c5e-fc5f1408863c.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
 }

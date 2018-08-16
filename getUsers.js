@@ -35,3 +35,17 @@ function addCard(val) {
       console.log('Error registering service worker for scope:'+ reg.scope);
     });
   }
+
+  window.addEventListener('beforeinstallprompt', function(e) {
+  e.userChoice.then(function(choiceResult) {
+
+    console.log(choiceResult.outcome);
+
+    if(choiceResult.outcome == 'dismissed') {
+      console.log('User cancelled home screen install');
+    }
+    else {
+      console.log('User added to home screen');
+    }
+  });
+});
