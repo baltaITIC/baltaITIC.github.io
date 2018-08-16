@@ -1,7 +1,7 @@
 var CACHE = 'cachePWA';
 var precacheFiles = [
   './',
-  './index.js',
+  './index.html',
   './styles.css',
   './getUsers.js'
     ];
