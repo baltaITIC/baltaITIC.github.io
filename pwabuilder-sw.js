@@ -1,9 +1,10 @@
 var CACHE = 'cachePWA';
 var precacheFiles = [
+  '/',
   '/index.js',
   '/styles.css',
   '/getUsers.js',
-  '/images/ic_refresh_white_24px.svg',
+  '/images/ic_refresh_white_24px.svg'
     ];
 
 //Install stage sets up the cache-array to configure pre-cache content
