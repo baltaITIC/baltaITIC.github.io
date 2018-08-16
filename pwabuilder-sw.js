@@ -1,4 +1,4 @@
-var CACHE = 'pwabuilder-precache';
+var CACHE = 'cachePWA';
 var precacheFiles = [
   '/index.js',
   '/styles.css',
