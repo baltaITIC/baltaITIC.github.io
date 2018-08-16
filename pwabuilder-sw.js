@@ -4,6 +4,7 @@ var precacheFiles = [
   './styles.css',
   './getUsers.js',
   './images/ic_refresh_white_24px.svg',
+  './manifest.json',
   './index.html'
     ];
 
