@@ -20,10 +20,26 @@ self.addEventListener('install', function(evt) {
 
 
 //allow sw to control of current page
-self.addEventListener('activate', function(event) {
+/*self.addEventListener('activate', function(e) {
   console.log('[PWA Builder] Claiming clients for current page');
   return self.clients.claim();
+});*/
+
+self.addEventListener('activate', function(e) {
+  console.log('[PWA Builder] Activate');
+  e.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== cacheName) {
+          console.log('[PWA Builder] Removing old cache', key);
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+  return self.clients.claim();
 });
+
 
 self.addEventListener('fetch', function(evt) {
   console.log('[PWA Builder] The service worker is serving the asset.'+ evt.request.url);
