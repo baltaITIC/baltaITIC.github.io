@@ -1,10 +1,10 @@
 var cacheName = 'userv1.0.0';
 var filesToCache = [
-  '/',
-  '/index.js',
-  '/styles.css',
-  'getUsers.js',
-  'images/ic_refresh_white_24px.svg'
+  './',
+  './index.js',
+  './styles.css',
+  './getUsers.js',
+  './images/ic_refresh_white_24px.svg'
 ];
 
 self.addEventListener('install', function(e) {

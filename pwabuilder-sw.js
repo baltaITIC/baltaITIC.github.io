@@ -1,10 +1,10 @@
 var CACHE = 'cachePWA';
 var precacheFiles = [
-  '/',
-  '/index.js',
-  '/styles.css',
-  '/getUsers.js',
-  '/images/ic_refresh_white_24px.svg'
+  './',
+  './index.js',
+  './styles.css',
+  './getUsers.js',
+  './images/ic_refresh_white_24px.svg'
     ];
 
 //Install stage sets up the cache-array to configure pre-cache content
@@ -18,12 +18,12 @@ self.addEventListener('install', function(evt) {
 
 
 //allow sw to control of current page
-self.addEventListener('activate', function(e) {
+/*self.addEventListener('activate', function(e) {
   console.log('[PWA Builder] Claiming clients for current page');
   return self.clients.claim();
-});
+});*/
 
-/*self.addEventListener('activate', function(e) {
+self.addEventListener('activate', function(e) {
   console.log('[PWA Builder] Activate');
   e.waitUntil(
     caches.keys().then(function(keyList) {
@@ -36,7 +36,7 @@ self.addEventListener('activate', function(e) {
     })
   );
   return self.clients.claim();
-});*/
+});
 
 
 self.addEventListener('fetch', function(evt) {
