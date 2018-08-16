@@ -27,7 +27,7 @@ self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.keys().then(function(keyList) {
       return Promise.all(keyList.map(function(key) {
-        if (key !== cacheName) {
+        if (key !== CACHE) {
           console.log('[PWA Builder] Removing old cache', key);
           return caches.delete(key);
         }
