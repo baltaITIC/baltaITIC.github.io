@@ -3,8 +3,7 @@ var precacheFiles = [
   './',
   './index.js',
   './styles.css',
-  './getUsers.js',
-  './images/ic_refresh_white_24px.svg'
+  './getUsers.js'
     ];
 
 //Install stage sets up the cache-array to configure pre-cache content
