@@ -1,4 +1,3 @@
-
 let deferredPrompt;
 
 $.getJSON( "https://jsonplaceholder.typicode.com/users", function( data ) {
@@ -40,27 +39,18 @@ function addCard(val) {
   }
 
   window.addEventListener('beforeinstallprompt', function(e) {
-    e.preventDefault();
-   // Stash the event so it can be triggered later.
-    deferredPrompt = e;
+    e.userChoice.then(function(choiceResult) {
+    console.log(choiceResult.outcome);
+
+    if(choiceResult.outcome == 'dismissed') {
+      console.log('User cancelled home screen install');
+    }
+    else {
+      console.log('User added to home screen');
+    }
+  });
 });
 
 window.addEventListener('appinstalled', (evt) => {
   alert('a2hs', 'installed');
 });
-
-var txt;
-var r = confirm("¿Quieres instalar esta app en tu escritorio?");
-if (r == true) {
-  deferredPrompt.prompt();
-// Wait for the user to respond to the prompt
-deferredPrompt.userChoice
-  .then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the A2HS prompt');
-    } else {
-      console.log('User dismissed the A2HS prompt');
-    }
-    deferredPrompt = null;
-  });
-}
