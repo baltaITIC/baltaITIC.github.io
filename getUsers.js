@@ -38,7 +38,7 @@ function addCard(val) {
 
   window.addEventListener('beforeinstallprompt', function(e) {
   e.userChoice.then(function(choiceResult) {
-
+    alert("Funciona");
     console.log(choiceResult.outcome);
 
     if(choiceResult.outcome == 'dismissed') {
