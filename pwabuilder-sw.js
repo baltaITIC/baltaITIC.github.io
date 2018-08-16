@@ -17,12 +17,12 @@ self.addEventListener('install', function(evt) {
 
 
 //allow sw to control of current page
-/*self.addEventListener('activate', function(e) {
+self.addEventListener('activate', function(e) {
   console.log('[PWA Builder] Claiming clients for current page');
   return self.clients.claim();
-});*/
+});
 
-self.addEventListener('activate', function(e) {
+/*self.addEventListener('activate', function(e) {
   console.log('[PWA Builder] Activate');
   e.waitUntil(
     caches.keys().then(function(keyList) {
@@ -35,7 +35,7 @@ self.addEventListener('activate', function(e) {
     })
   );
   return self.clients.claim();
-});
+});*/
 
 
 self.addEventListener('fetch', function(evt) {
