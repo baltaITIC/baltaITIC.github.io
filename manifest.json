@@ -10,7 +10,7 @@
     "description": "This is a app that shows persons that are important",
     "orientation": "portrait",
     "background_color": "transparent",
-    "related_applications": [],
+    "related_applications": [""],
     "prefer_related_applications": false,
-    "icons": []
+    "icons": [""]
 }
