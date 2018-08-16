@@ -31,7 +31,7 @@ function addCard(val) {
       scope: './'
     }).then(function(reg) {
       console.log('Service worker has been registered for scope:'+ reg.scope);
-    }).catch(function(){
+    }).catch(function(err){
       console.log('Error registering service worker for scope:'+ reg.scope);
     });
   }
