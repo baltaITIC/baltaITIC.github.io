@@ -5,19 +5,9 @@ $.getJSON( "https://jsonplaceholder.typicode.com/users", function( data ) {
   $.each( data, function( key, val ) {
     $('body').append(addCard(val));
   });
+installPWA();
 
-  if (navigator.serviceWorker.controller) {
-    console.log('[PWA Builder] active service worker found, no need to register')
-  } else {
-    navigator.serviceWorker.register('pwabuilder-sw.js', {
-      scope: './'
-    }).then(function(reg) {
-      console.log('Service worker has been registered for scope:'+ reg.scope);
-    }).catch(function(err){
-      console.log('Error registering service worker for scope:'+ reg.scope);
-    });
-  }
-
+ 
 });
 
 function addCard(val) {
@@ -39,8 +29,21 @@ function addCard(val) {
 
   //Register service worker
 
-  
+function installPWA(){
+  if (navigator.serviceWorker.controller) {
+    console.log('[PWA Builder] active service worker found, no need to register')
+  } else {
+    navigator.serviceWorker.register('pwabuilder-sw.js', {
+      scope: './'
+    }).then(function(reg) {
+      console.log('Service worker has been registered for scope:'+ reg.scope);
+    }).catch(function(err){
+      console.log('Error registering service worker for scope:'+ reg.scope);
+    });
+  }
 
+} 
+installPWA();
   /*window.addEventListener('beforeinstallprompt', function(e) {
     e.userChoice.then(function(choiceResult) {
     console.log(choiceResult.outcome);
